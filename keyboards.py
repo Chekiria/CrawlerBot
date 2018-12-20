@@ -4,11 +4,13 @@ from aiogram.types import ReplyKeyboardRemove, \
 from aiogram import Bot, types
 
 
+# sostojanie = ReplyKeyboardMarkup()
 sostojanie = InlineKeyboardMarkup(row_width=2)
 vse_ok = InlineKeyboardButton('Все понятно', callback_data='vse_ok')
-# zadat_vopros = types.InlineKeyboardButton(text='Задать вопрос', url='https://t.me/che_kiria')
+# vse_ok = KeyboardButton('Все понятно')
+# zadat_vopros = KeyboardButton('Задать вопрос')
+
 zadat_vopros = types.InlineKeyboardButton(text='Задать вопрос', url='https://t.me/meoweff')
-# zadat_vopros = InlineKeyboardButton('Задать вопрос', callback_data='zadat_vopros')
 sostojanie.add(vse_ok, zadat_vopros)
 
 
